@@ -1,0 +1,217 @@
+
+.container {
+  max-width: 1700px;
+}
+.user-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .user-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: #e2e8f0;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #115e59;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #006cd1;
+  }
+  
+  .user-id {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+
+  /* responsive */
+@media (max-width: 1600px) {
+  .use{
+    flex: 1 1 calc(33.33% - 1rem); 
+  }
+}
+
+@media (max-width: 992px) {
+  .use {
+    flex: 1 1 calc(50% - 1rem); 
+  }
+}
+
+@media (max-width: 768px) {
+  .use {
+    flex: 1 1 calc(100% - 1rem); 
+  }
+}
+
+
+/* h1 */
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #007bff;
+    }
+    50% {
+      color: #ff4081;
+    }
+    100% {
+      color: #007bff;
+    }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    animation: slideIn 1s ease-out, colorChange 3s infinite alternate;
+  }
+
+
+  .weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+  
+  .weather-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease; 
+
+  }
+
+  .weather-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .weather-box p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .weather-box img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+  }
+  
+  .weather-box .text-danger {
+    color: red;
+  }
+  
+  .weather-box .text-center {
+    margin: 20px 0;
+  }
+
+  .weather-box .info {
+    font-weight: bold;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-control {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary2 {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary2:hover {
+  color :white;
+  background-color: #115e59;
+}
