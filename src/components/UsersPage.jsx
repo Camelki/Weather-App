@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './style.css'; // Assurez-vous de créer ce fichier CSS pour ajouter des styles spécifiques
+import './style.css'; 
 
 const UsersPage = () => {
   const [users, setUsers] = useState([]);

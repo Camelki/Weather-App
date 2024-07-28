@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UsersPage from './components/UsersPage.jsx';
-import WeatherPage from './components/WeatherPage.jsx';
+import UsersPage from './components/UsersPage';
+import WeatherPage from './components/WeatherPage';
 
 function App() {
   return (
